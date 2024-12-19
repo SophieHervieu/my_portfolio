@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className='app'>
-      <NavBar />
+      <NavBar className='nav'/>
     </div>
   )
 }
