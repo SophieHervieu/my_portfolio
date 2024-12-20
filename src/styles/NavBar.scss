@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
-    margin: 0 auto;
+    // margin-top: 20px !important;
     height: 70px;
     width: 100%;
     max-width: 1280px;
@@ -11,6 +11,21 @@
     background-color: #131313;
     color: #a3a3a3;
     border-radius: 20px;
+    position: fixed; /* Fixe la navbar pour qu'elle suive le scroll */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    &.hidden {
+        transform: translateY(-100%) translateX(-50%); /* Cache la navbar vers le haut */
+        opacity: 0; /* Rendre invisible */
+    }
+
+    &.visible {
+        transform: translateY(0) translateX(-50%); /* Réapparait en position normale */
+        opacity: 1; /* Rendre visible */
+    }
 
     .leftSection {
         display: flex;
