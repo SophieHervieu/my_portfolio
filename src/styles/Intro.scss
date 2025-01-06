@@ -1,0 +1,262 @@
+.intro {
+    color: #a3a3a3;
+    // border: 2px solid red;
+    margin-top: 140px;
+    margin-left: 310px;
+    margin-right: 310px;
+    display: flex;
+    flex-direction: column;
+
+    .presentation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .introParagraph {
+            padding: 20px 50px;
+            opacity: 0; /* Initialement masqué */
+            transform: translateY(20px); /* Position initiale pour le glissement */
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+            &.visible {
+                opacity: 1;
+                transform: translateY(0); /* Position finale */
+            }
+
+            // Applique des délais aux enfants
+            > * {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            }
+
+            &.visible > * {
+                opacity: 1;
+                transform: translateY(0);
+
+                // Délai en fonction de l'ordre des enfants
+                &:nth-child(1) {
+                    transition-delay: 0.2s;
+                }
+                &:nth-child(2) {
+                    transition-delay: 0.4s;
+                }
+                &:nth-child(3) {
+                    transition-delay: 0.6s;
+                }
+                &:nth-child(4) {
+                    transition-delay: 0.8s;
+                }
+                &:nth-child(5) {
+                    transition-delay: 1s;
+                }
+            }
+
+            .vignette {
+                padding: 10px 15px;
+                background-color: #151515;
+                border: 1px solid #262626;
+                border-radius: 25px;
+                font-family: "Lora-VariableFont_wght";
+                color: #f5f5f5;
+
+                .circle {
+                    width: 10px; /* Taille du cercle */
+                    height: 10px;
+                    background-color: #3ebe5e; /* Couleur du cercle */
+                    border-radius: 50%; /* Rendre le cercle rond */
+                    margin-right: 10px; /* Espacement entre le texte et le cercle */
+                    display: inline-block;
+                }
+            }
+
+            .firstParagraphOne {
+                font-family: "Lora-VariableFont_wght";
+                font-size: 60px;
+                color: #f5f5f5;
+                margin-top: 40px;
+                margin-bottom: 0;
+
+                .period {
+                    color: #b9925f;
+                }
+            }
+
+            .firstParagraphTwo {
+                font-family: "Lora-VariableFont_wght";
+                font-size: 60px;
+                color: #f5f5f5;
+                margin: 0;
+
+                .period {
+                    color: #b9925f;
+                }
+            }
+
+            .secondParagraph {
+                margin-top: 20px;
+                margin-right: 150px;
+                font-family: "Nunito-Regular";
+                font-size: 20px;
+                margin-bottom: 45px;
+            }
+
+            .buttons {
+                display: flex;
+
+                .btn {
+                    padding: 15px;
+                    background-color: #fdba72;
+                    border: none;
+                    border-radius: 5px;
+                    font-family: "Nunito-Semibold";
+                    font-size: 18px;
+                    margin-right: 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #e9aa66;
+                    }
+                }
+
+                .aboutBtn {
+                    background-color: #0e0e0e;
+                    padding: 15px;
+                    border: 1px solid #737373;
+                    border-radius: 5px;
+                    font-family: "Nunito-Semibold";
+                    font-size: 18px;
+                    color: #f5f5f5;
+                    margin-left: 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #e2e0e0;
+                    }
+                }
+            }
+        }
+
+        .profilePicture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            img {
+                margin-left: 40px;
+                margin-right: 40px;
+                width: 300px;
+                border: 15px solid #b9925f;
+                border-radius: 200px;
+            }
+
+            .icons {
+                display: flex;
+                background-color: #131313a1;
+                padding: 8px;
+                border-radius: 40px;
+                position: absolute; /* Positionnement absolu pour déplacer la div au-dessus de l'image */
+                top: 300px; /* Ajuste cette valeur selon l'espacement voulu */
+                left: 50%; /* Centre les icônes horizontalement */
+                transform: translateX(-50%); /* Applique un décalage pour centrer parfaitement */
+
+                .githubIcon {
+                    background-color: #262626;
+                    font-size: 25px;
+                    color: #f5f5f5;
+                    padding: 11px;
+                    border-radius: 30px;
+                    margin-right: 8px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #a3a3a3;
+                    }
+                }
+
+                .linkedinIcon {
+                    background-color: #262626;
+                    font-size: 25px;
+                    color: #f5f5f5;
+                    padding: 11px;
+                    border-radius: 30px;
+                    margin-left: 8px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #a3a3a3;
+                    }
+                }
+            }
+        }
+    }
+
+    .technoListWrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden; /* Masque tout ce qui dépasse */
+        height: 200px; /* Ajustez selon vos images */
+
+        .technoList {
+            display: flex;
+            animation: scroll 60s linear infinite; /* Animation de défilement */
+            width: calc(200%); /* Double la largeur pour contenir la liste deux fois */
+
+            /* Duplication de contenu */
+            &::after {
+                content: '';
+                display: flex;
+                width: 100%;
+            }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%); /* Défilement vers la gauche */
+                }
+            }
+
+            .smallLogo {
+                height: 70px;
+                width: 150px;
+                padding: 60px 30px;
+            }
+
+            .tallLogo {
+                height: 40px;
+                width: 150px;
+                padding: 75px 30px;
+            }
+
+            .mediumLogo {
+                height: 50px;
+                width: 150px;
+                padding: 70px 30px;
+            }
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100px; /* Largeur du fondu */
+            height: 100%;
+            z-index: 2;
+            pointer-events: none; /* Évite l'interaction avec ces zones */
+        }
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to right, #0e0e0e, transparent);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to left, #0e0e0e, transparent);
+        }
+    }
+}

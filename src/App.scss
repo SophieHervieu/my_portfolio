@@ -1,4 +1,6 @@
 @import "./styles/NavBar.scss";
+@import "./styles/Intro.scss";
+@import "./styles/Projects.scss";
 
 body {
   overflow: auto;
@@ -34,24 +36,26 @@ code {
   src: url(./assets/fonts/Nunito-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Nunito-Semibold";
+  src: url(./assets/fonts/Nunito-SemiBold.ttf);
+}
+
 #root {
   max-width: 1280px;
   max-height: 100%;
   margin: 0;
   padding: 0;
-  // text-align: center;
 }
 
 .app {
+  display: block;
   margin: 0;
   padding: 0;
   background-color: #0e0e0e;
-  height: 110vh;
-  width: 100vw;
-
-  // .nav {
-  //   margin-top: 20px;
-  // }
+  height: 200vh;
+  width: 99vw;
+  padding-top: 70px;
 }
 
 // .logo {

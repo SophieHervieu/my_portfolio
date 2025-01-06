@@ -4,8 +4,8 @@ import { PiGithubLogo, PiLinkedinLogo } from "react-icons/pi";
 import { GoArrowUpRight } from "react-icons/go";
 
 export const NavBar = () => {
-    const [showNav, setShowNav] = useState(true);
-  const lastScrollY = useRef(0); // Utilisation de useRef pour conserver la valeur mutable
+  const [showNav, setShowNav] = useState(true);
+  const lastScrollY = useRef(0); // Suivi du dernier scroll
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,7 +16,7 @@ export const NavBar = () => {
         // Scroll vers le haut : affiche la navbar
         setShowNav(true);
       }
-      lastScrollY.current = window.scrollY; // Met à jour la valeur de lastScrollY
+      lastScrollY.current = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);

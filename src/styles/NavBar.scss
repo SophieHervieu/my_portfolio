@@ -2,43 +2,62 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
-    // margin-top: 20px !important;
+    padding: 40px 30px;
+    margin-top: 30px;
     height: 70px;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
-    background-color: #131313;
+    background-color: rgba(19, 19, 19, 0.85);
     color: #a3a3a3;
+    font-family: "Nunito-Regular";
     border-radius: 20px;
-    position: fixed; /* Fixe la navbar pour qu'elle suive le scroll */
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Effet Glassmorphism */
+    backdrop-filter: blur(10px); /* Ajoute le flou de fond */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilité pour les navigateurs Webkit */
 
-    &.hidden {
-        transform: translateY(-100%) translateX(-50%); /* Cache la navbar vers le haut */
-        opacity: 0; /* Rendre invisible */
+    /* Navbar visible */
+    &.visible {
+        transform: translateX(-50%) translateY(0); // Position normale (visible)
+        opacity: 1;
     }
 
-    &.visible {
-        transform: translateY(0) translateX(-50%); /* Réapparait en position normale */
-        opacity: 1; /* Rendre visible */
+    /* Navbar cachée */
+    &.hidden {
+        transform: translateX(-50%) translateY(-100%); // Déplace la navbar vers le haut
+        opacity: 0;
     }
 
     .leftSection {
         display: flex;
         align-items: center;
         gap: 20px;
-        font-size: 20px;
+        font-size: 18px;
 
         .homeIcon {
             background-color: #e5e5e5;
             color: #0e0e0e;
-            font-size: 22px;
-            padding: 10px;
+            font-size: 25px;
+            padding: 11px;
             border-radius: 30px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #d4d3d3;
+            }
+        }
+
+        span {
+            cursor: pointer;
+
+            &:hover {
+                color: #f5f5f5;
+            }
         }
     }
 
@@ -54,6 +73,11 @@
             font-size: 19px;
             padding: 10px;
             border-radius: 30px;
+            cursor: pointer;
+
+            &:hover {
+                color: #f5f5f5;
+            }
         }
 
         .linkedinIcon {
@@ -62,6 +86,11 @@
             font-size: 19px;
             padding: 10px;
             border-radius: 30px;
+            cursor: pointer;
+
+            &:hover {
+                color: #f5f5f5;
+            }
         }
 
         .contactBtn {
@@ -69,10 +98,15 @@
             color: #0e0e0e;
             padding: 10px;
             border-radius: 6px;
+            cursor: pointer;
 
             .arrowIcon {
                 color: #0e0e0e;
                 padding-left: 2px;
+            }
+
+            &:hover {
+                background-color: #d4d3d3;
             }
         }
     }
