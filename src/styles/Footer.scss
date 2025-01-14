@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 40px 30px;
     height: 200px;
     width: 100%;
@@ -11,6 +11,10 @@
     color: #a3a3a3;
     font-family: "Nunito-Regular";
     border-radius: 20px;
+    position: absolute;
+    top: 2950px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .homeIcon {
         background-color: #e5e5e5;
@@ -29,6 +33,11 @@
         display: flex;
         justify-content: space-evenly;
         padding: 10px;
+
+        span {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 
     .profesionnal {
