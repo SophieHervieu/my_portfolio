@@ -39,9 +39,10 @@
                 width: 100%;
                 height: 100%;
                 background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 45%);
+                transition: transform 0.3s ease; /* Animation fluide pour le déplacement */
+                transform-origin: bottom;
                 pointer-events: none;
                 z-index: 2;
-                border-radius: 16px; // Applique le même border-radius que l'élément
             }
 
             &:hover {
@@ -53,6 +54,14 @@
                 .intro {
                     display: none;
                 }
+
+                .arrow {
+                    display: block;
+                }
+            }
+
+            &:hover::after {
+                transform: scaleY(2); /* Réduit uniquement la hauteur du dégradé */
             }
 
             img {
@@ -79,6 +88,19 @@
                 margin: 25px;
                 padding: 10px 15px;
                 border-radius: 25px;
+            }
+
+            .arrow {
+                position: absolute;
+                z-index: 1000;
+                font-size: 140px;
+                color: #0e0e0e;
+                background-color: #a87e51;
+                border: 1px solid #a87e51;
+                border-radius: 100%;
+                top: 150px;
+                left: 240px;
+                display: none;
             }
 
             .intro {
@@ -125,6 +147,8 @@
                 width: 100%;
                 height: 100%;
                 background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 45%);
+                transition: transform 0.3s ease; /* Animation fluide pour le déplacement */
+                transform-origin: bottom;
                 pointer-events: none;
                 z-index: 2;
                 border-radius: 16px; // Applique le même border-radius que l'élément
@@ -139,6 +163,14 @@
                 .intro {
                     display: none;
                 }
+
+                .arrow {
+                    display: block;
+                }
+            }
+
+            &:hover::after {
+                transform: scaleY(2); /* Réduit uniquement la hauteur du dégradé */
             }
 
             img {
@@ -178,6 +210,19 @@
                 margin-left: 140px;
                 padding: 10px 15px;
                 border-radius: 25px;
+            }
+
+            .arrow {
+                position: absolute;
+                z-index: 1000;
+                font-size: 140px;
+                color: #0e0e0e;
+                background-color: #a87e51;
+                border: 1px solid #a87e51;
+                border-radius: 100%;
+                top: 150px;
+                left: 240px;
+                display: none;
             }
 
             .intro {
@@ -224,6 +269,8 @@
                 width: 100%;
                 height: 100%;
                 background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 45%);
+                transition: transform 0.3s ease; /* Animation fluide pour le déplacement */
+                transform-origin: bottom;
                 pointer-events: none;
                 z-index: 2;
                 border-radius: 16px; // Applique le même border-radius que l'élément
@@ -238,6 +285,14 @@
                 .intro {
                     display: none;
                 }
+
+                .arrow {
+                    display: block;
+                }
+            }
+
+            &:hover::after {
+                transform: scaleY(2); /* Réduit uniquement la hauteur du dégradé */
             }
 
             img {
@@ -254,7 +309,7 @@
                 z-index: 1;
             }
 
-            span {
+            .spanOne {
                 color: #cac9c6;
                 font-family: "Nunito-Regular";
                 font-size: 14px;
@@ -264,6 +319,32 @@
                 margin: 25px;
                 padding: 10px 15px;
                 border-radius: 25px;
+            }
+
+            .spanTwo {
+                color: #cac9c6;
+                font-family: "Nunito-Regular";
+                font-size: 14px;
+                background-color: rgba(19, 19, 18, 0.493);
+                position: absolute;
+                z-index: 10;
+                margin-top: 25px;
+                margin-left: 140px;
+                padding: 10px 15px;
+                border-radius: 25px;
+            }
+
+            .arrow {
+                position: absolute;
+                z-index: 1000;
+                font-size: 140px;
+                color: #0e0e0e;
+                background-color: #a87e51;
+                border: 1px solid #a87e51;
+                border-radius: 100%;
+                top: 150px;
+                left: 240px;
+                display: none;
             }
 
             .intro {
@@ -310,6 +391,8 @@
                 width: 100%;
                 height: 100%;
                 background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 45%);
+                transition: transform 0.3s ease; /* Animation fluide pour le déplacement */
+                transform-origin: bottom;
                 pointer-events: none;
                 z-index: 2;
                 border-radius: 16px; // Applique le même border-radius que l'élément
@@ -324,6 +407,14 @@
                 .intro {
                     display: none;
                 }
+
+                .arrow {
+                    display: block;
+                }
+            }
+
+            &:hover::after {
+                transform: scaleY(2); /* Réduit uniquement la hauteur du dégradé */
             }
 
             img {
@@ -350,6 +441,19 @@
                 margin: 25px;
                 padding: 10px 15px;
                 border-radius: 25px;
+            }
+
+            .arrow {
+                position: absolute;
+                z-index: 1000;
+                font-size: 140px;
+                color: #0e0e0e;
+                background-color: #a87e51;
+                border: 1px solid #a87e51;
+                border-radius: 100%;
+                top: 150px;
+                left: 240px;
+                display: none;
             }
 
             .intro {
