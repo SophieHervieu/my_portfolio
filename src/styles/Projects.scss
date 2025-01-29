@@ -13,8 +13,8 @@
 
     .projectCards {
         display: grid;
-        grid-template-columns: repeat(4, 1fr) ;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         justify-content: center;
@@ -56,12 +56,13 @@
                 }
 
                 .arrow {
-                    display: block;
+                    opacity: 1;
+                    transform: scale(1);
                 }
             }
 
             &:hover::after {
-                transform: scaleY(2); /* Réduit uniquement la hauteur du dégradé */
+                transform: scaleY(2.5);
             }
 
             img {
@@ -73,7 +74,6 @@
                 object-fit: cover; /* L'image couvre tout le conteneur */
                 object-position: top; /* Focalisation de l'image sur le haut */
                 display: block; /* Retire l'espace sous l'image */
-                border-radius: 0; /* L'image n'a pas de border-radius pour éviter les décalages */
                 margin: 0; /* Supprimer toute marge qui pourrait être ajoutée par le navigateur */
                 z-index: 1;
             }
@@ -93,14 +93,16 @@
             .arrow {
                 position: absolute;
                 z-index: 1000;
-                font-size: 140px;
+                font-size: 120px;
                 color: #0e0e0e;
                 background-color: #a87e51;
                 border: 1px solid #a87e51;
                 border-radius: 100%;
                 top: 150px;
                 left: 240px;
-                display: none;
+                opacity: 0;
+                transform: scale(0.8);
+                transition: opacity 0.5s ease, transform 0.5s ease;
             }
 
             .intro {
@@ -151,7 +153,6 @@
                 transform-origin: bottom;
                 pointer-events: none;
                 z-index: 2;
-                border-radius: 16px; // Applique le même border-radius que l'élément
             }
 
             &:hover {
@@ -165,12 +166,13 @@
                 }
 
                 .arrow {
-                    display: block;
+                    opacity: 1;
+                    transform: scale(1);
                 }
             }
 
             &:hover::after {
-                transform: scaleY(2); /* Réduit uniquement la hauteur du dégradé */
+                transform: scaleY(2.5); /* Réduit uniquement la hauteur du dégradé */
             }
 
             img {
@@ -182,7 +184,6 @@
                 object-fit: cover; /* L'image couvre tout le conteneur */
                 object-position: top; /* Focalisation de l'image sur le haut */
                 display: block; /* Retire l'espace sous l'image */
-                border-radius: 0; /* L'image n'a pas de border-radius pour éviter les décalages */
                 margin: 0; /* Supprimer toute marge qui pourrait être ajoutée par le navigateur */
                 z-index: 1;
             }
@@ -215,14 +216,16 @@
             .arrow {
                 position: absolute;
                 z-index: 1000;
-                font-size: 140px;
+                font-size: 120px;
                 color: #0e0e0e;
                 background-color: #a87e51;
                 border: 1px solid #a87e51;
                 border-radius: 100%;
                 top: 150px;
                 left: 240px;
-                display: none;
+                opacity: 0;
+                transform: scale(0.8);
+                transition: opacity 0.5s ease, transform 0.5s ease;
             }
 
             .intro {
@@ -273,7 +276,6 @@
                 transform-origin: bottom;
                 pointer-events: none;
                 z-index: 2;
-                border-radius: 16px; // Applique le même border-radius que l'élément
             }
 
             &:hover {
@@ -287,12 +289,13 @@
                 }
 
                 .arrow {
-                    display: block;
+                    opacity: 1;
+                    transform: scale(1);
                 }
             }
 
             &:hover::after {
-                transform: scaleY(2); /* Réduit uniquement la hauteur du dégradé */
+                transform: scaleY(2.5); /* Réduit uniquement la hauteur du dégradé */
             }
 
             img {
@@ -304,7 +307,6 @@
                 object-fit: cover; /* L'image couvre tout le conteneur */
                 object-position: top; /* Focalisation de l'image sur le haut */
                 display: block; /* Retire l'espace sous l'image */
-                border-radius: 0; /* L'image n'a pas de border-radius pour éviter les décalages */
                 margin: 0; /* Supprimer toute marge qui pourrait être ajoutée par le navigateur */
                 z-index: 1;
             }
@@ -337,14 +339,16 @@
             .arrow {
                 position: absolute;
                 z-index: 1000;
-                font-size: 140px;
+                font-size: 120px;
                 color: #0e0e0e;
                 background-color: #a87e51;
                 border: 1px solid #a87e51;
                 border-radius: 100%;
                 top: 150px;
                 left: 240px;
-                display: none;
+                opacity: 0;
+                transform: scale(0.8);
+                transition: opacity 0.5s ease, transform 0.5s ease;
             }
 
             .intro {
@@ -395,7 +399,6 @@
                 transform-origin: bottom;
                 pointer-events: none;
                 z-index: 2;
-                border-radius: 16px; // Applique le même border-radius que l'élément
             }
 
             &:hover {
@@ -409,12 +412,13 @@
                 }
 
                 .arrow {
-                    display: block;
+                    opacity: 1;
+                    transform: scale(1);
                 }
             }
 
             &:hover::after {
-                transform: scaleY(2); /* Réduit uniquement la hauteur du dégradé */
+                transform: scaleY(2.5); /* Réduit uniquement la hauteur du dégradé */
             }
 
             img {
@@ -426,7 +430,6 @@
                 object-fit: cover; /* L'image couvre tout le conteneur */
                 object-position: top; /* Focalisation de l'image sur le haut */
                 display: block; /* Retire l'espace sous l'image */
-                border-radius: 0; /* L'image n'a pas de border-radius pour éviter les décalages */
                 margin: 0; /* Supprimer toute marge qui pourrait être ajoutée par le navigateur */
                 z-index: 1;
             }
@@ -446,14 +449,16 @@
             .arrow {
                 position: absolute;
                 z-index: 1000;
-                font-size: 140px;
+                font-size: 120px;
                 color: #0e0e0e;
                 background-color: #a87e51;
                 border: 1px solid #a87e51;
                 border-radius: 100%;
                 top: 150px;
                 left: 240px;
-                display: none;
+                opacity: 0;
+                transform: scale(0.8);
+                transition: opacity 0.5s ease, transform 0.5s ease;
             }
 
             .intro {

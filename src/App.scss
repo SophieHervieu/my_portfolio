@@ -1,6 +1,7 @@
 @import "./styles/NavBar.scss";
 @import "./styles/Intro.scss";
 @import "./styles/Projects.scss";
+@import "./styles/Apropos.scss";
 @import "./styles/Footer.scss";
 
 body {
@@ -54,7 +55,7 @@ code {
   margin: 0;
   padding: 0;
   background-color: #0e0e0e;
-  height: auto;
+  min-height: auto;
   width: 99vw;
   padding-top: 70px;
 }
