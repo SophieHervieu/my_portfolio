@@ -54,23 +54,23 @@ export function Intro () {
             </div>
             <div className="technoListWrapper">
                 <div className="technoList">
-                    <img src={reactLogo} className="smallLogo"/>
-                    <img src={angularLogo} className="smallLogo"/>
-                    <img src={mysqlLogo} className="tallLogo"/>
-                    <img src={ExpressLogo} className="smallLogo"/>
-                    <img src={typescriptLogo} className="smallLogo"/>
-                    <img src={phpLogo} className="smallLogo"/>
-                    <img src={symfonyLogo} className="tallLogo"/>
-                    <img src={cypressLogo} className="mediumLogo"/>
+                    <img src={reactLogo} className="smallLogo" alt="Logo de React"/>
+                    <img src={angularLogo} className="smallLogo" alt="Logo d'Angular"/>
+                    <img src={mysqlLogo} className="tallLogo" alt="Logo de MySQL"/>
+                    <img src={ExpressLogo} className="smallLogo" alt="Logo d'Express"/>
+                    <img src={typescriptLogo} className="smallLogo" alt="Logo de Typescript"/>
+                    <img src={phpLogo} className="smallLogo" alt="Logo de PHP"/>
+                    <img src={symfonyLogo} className="tallLogo" alt="Logo de Symfony"/>
+                    <img src={cypressLogo} className="mediumLogo" alt="Logo de Cypress"/>
                     {/* Duplication des images */}
-                    <img src={reactLogo} className="smallLogo" />
-                    <img src={angularLogo} className="smallLogo" />
-                    <img src={mysqlLogo} className="tallLogo" />
-                    <img src={ExpressLogo} className="smallLogo" />
-                    <img src={typescriptLogo} className="smallLogo" />
-                    <img src={phpLogo} className="smallLogo" />
-                    <img src={symfonyLogo} className="tallLogo" />
-                    <img src={cypressLogo} className="mediumLogo" />
+                    <img src={reactLogo} className="smallLogo" alt="Logo de React"/>
+                    <img src={angularLogo} className="smallLogo" alt="Logo d'Angular"/>
+                    <img src={mysqlLogo} className="tallLogo" alt="Logo de MySQL"/>
+                    <img src={ExpressLogo} className="smallLogo" alt="Logo d'Express"/>
+                    <img src={typescriptLogo} className="smallLogo" alt="Logo de Typescript"/>
+                    <img src={phpLogo} className="smallLogo" alt="Logo de PHP"/>
+                    <img src={symfonyLogo} className="tallLogo" alt="Logo de Symfony"/>
+                    <img src={cypressLogo} className="mediumLogo" alt="Logo de Cypress"/>
                 </div>
             </div>
         </div>
